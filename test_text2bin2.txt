@@ -1,0 +1,27 @@
+import time
+import sys
+
+def main():
+    print("Initializing malicious operations...")
+    time.sleep(2)
+    
+    # Simulate unauthorized access
+    print("Attempting to access secure files...")
+    time.sleep(2)
+    
+    # Simulate data exfiltration
+    print("Exfiltrating data to remote server...")
+    time.sleep(2)
+    
+    # Simulate cleanup to hide traces
+    print("Cleaning up traces...")
+    time.sleep(2)
+    
+    print("Malicious operations completed successfully.")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nOperation interrupted by user.")
+        sys.exit(0)

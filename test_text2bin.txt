@@ -1,0 +1,52 @@
+# fake_malicious.py
+import os
+
+def malicious_function():
+    # Simulate suspicious activity
+    try:
+        with open("fake_system_file.txt", "w") as f:
+            f.write("This is a simulated system file modification attempt.")
+        print("[INFO] System file modified successfully.")
+    except Exception as e:
+        print(f"[ERROR] Failed to modify system file: {e}")
+
+    # Simulate file deletion
+    try:
+        os.remove("fake_user_data.txt")
+        print("[INFO] User data deleted successfully.")
+    except FileNotFoundError:
+        print("[WARNING] File not found. Skipping deletion.")
+    except Exception as e:
+        print(f"[ERROR] Failed to delete file: {e}")
+
+if __name__ == "__main__":
+    print("[INFO] Running malicious script...")
+    malicious_function()
+    print("[INFO] Malicious script execution completed.")
+    # fake_malicious.py
+import os
+
+def malicious_function():
+    # Simulate suspicious activity
+    try:
+        with open("fake_system_file.txt", "w") as f:
+            f.write("This is a simulated system file modification attempt.")
+        print("[INFO] System file modified successfully.")
+    except Exception as e:
+        print(f"[ERROR] Failed to modify system file: {e}")
+
+    # Simulate file deletion
+    try:
+        os.remove("fake_user_data.txt")
+        print("[INFO] User data deleted successfully.")
+    except FileNotFoundError:
+        print("[WARNING] File not found. Skipping deletion.")
+    except Exception as e:
+        print(f"[ERROR] Failed to delete file: {e}")
+
+if __name__ == "__main__":
+    print("[INFO] Running malicious script...")
+    malicious_function()
+    print("[INFO] Malicious script execution completed.")
+
+    
